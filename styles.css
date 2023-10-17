@@ -10,42 +10,33 @@ html {
 *, *::before, *::after{
   box-sizing: inherit;
 }
-/* + */
+
 body {
   font-family: "lato";
   line-height: 1.2;
   font-weight: normal;
   font-style: normal;
 }
-/* + */
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* + */
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* styles for header*/
-
-/* + */
 .header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /* transition: 1s linner;
-  z-index: 999; */
 }
-/* .header_active {
-  background: #0E1D28;
-  padding-bottom: 10px;
-} */
-/* + */
+
 .header-wrapper{
   display: flex;
   flex-wrap: wrap;
@@ -53,36 +44,35 @@ img {
   justify-content: space-between;
   padding-top: 56px;
 }
-/* + */
+
 .header-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
-/* + */
+
 .header-item {
   margin-right: 82px;
   list-style: none;
 }
-/* + */
+
 .header-item:last-child {
   margin-right: 0;
 }
-/* + */
+
 .header-link {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   line-height: 24px;
 }
-/* + */
+
 .header-link:hover, .header-link:focus, .header-link:active, .header-logo:hover {
   opacity: 70%;
 }
 
 /* styles for intro */
 
-/* + */
 .intro {
   background: url(./img/fone.jpg) no-repeat center;
   background-size: cover;
@@ -91,7 +81,6 @@ img {
   padding-bottom: 223px;
 }
 
-/* + */
 .intro-title {
   font-weight: 500;
   font-size: 50px;
@@ -101,7 +90,6 @@ img {
   margin-bottom: 22px;
 }
 
-/* + */
 .intro-subtitle {
   color: #fff;
   line-height: 24px;
@@ -111,7 +99,6 @@ img {
   margin-bottom: 59px;
 }
 
-/* + */
 .search-form-info {
   display: flex;
   flex-wrap: wrap;
@@ -125,36 +112,33 @@ img {
   padding-bottom: 0;
 }
 
-
-/* + */
-
 .search-form-field {
-width: 297px;
-background: transparent url("./img/Oval.svg") no-repeat left 8px;
-background-size: 20px;
-border: 0;
-border-bottom: 2px solid #BFC0C5;
-margin-right: 60px;
-padding-left: 43px;
-padding-bottom: 22px;
-font-size: 18px;
-color: #fff;
-font-weight: 500;
-line-height: 24px;
+  width: 297px;
+  background: transparent url("./img/Oval.svg") no-repeat left 8px;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #BFC0C5;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
+  /* margin-bottom: 20px; */
 }
 
-/* + */
 .search-form-field::placeholder {
-font-size: 18px;
-color: #fff;
-font-weight: 500;
-line-height: 24px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .search-form-field:hover::placeholder {
   opacity: 0.7;
 }
-/* + */
+
 .search-form-button {
   background-color: #1B7DFF;
   border: 0;
@@ -164,9 +148,9 @@ line-height: 24px;
   padding: 15px 39px;
   text-transform: uppercase;
 }
-/* + */
+
 .search-form-button:hover, .search-form-button:focus, .search-form-button:active {
-background-color: #1664cc;
+  background-color: #1664cc;
 }
 
 input:active, input:focus, input:hover {
@@ -177,7 +161,7 @@ input:active, input:focus, input:hover {
 .benefits {
   margin-bottom: 131px;
 }
-/* + */
+
 .benefits-wrap {
   max-width: 1262px;
   background-color: #fff;
@@ -187,18 +171,18 @@ input:active, input:focus, input:hover {
 }
 
 .benefits-title {
-font-size: 35px;
-font-weight: 500;
-line-height: 42px;
-color: #102746;
-padding: 93px 100px 88px 100px;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-transform: translateY(-100%);
-background-color: #fff;
-margin-top: 0;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42px;
+  color: #102746;
+  padding: 93px 100px 88px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(-100%);
+  background-color: #fff;
+  margin-top: 0;
 }
 
 .benefits-cards {
@@ -208,23 +192,21 @@ margin-top: 0;
   padding: 0 100px;
 }
 
-/* + */
 .benefits-card {
   grid-column: span 1;
   margin-bottom: 112px;
 }
-/* + */
+
 .benefits-card-pic {
   max-width: 58px;
   margin-bottom: 37px;
   margin-top: 32px;
 }
-/* + */
+
 .benefits-card1 {
   display: block;
 }
 
-/* + */
 .benefits-card-title {
   font-size: 18px;
   font-weight: 500;
@@ -233,39 +215,37 @@ margin-top: 0;
   margin-bottom: 37px;
 }
 
-/* + */
 .benefits-card-description {
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: #000;
-margin-bottom: 39px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 39px;
 }
 
 .benefits-card-more {
-display: inline-block;
-padding-right: 63px;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: #006DFE;
-text-decoration: none;
-background: url(./img/Shape.svg) no-repeat 97% center;
-transition: 0.2s all;
+  display: inline-block;
+  padding-right: 63px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+  background: url(./img/Shape.svg) no-repeat 97% center;
+  transition: 0.2s all;
 }
 
 .benefits-card-more:hover, .benefits-card-more:focus {
   background: url(./img/Shape.svg) no-repeat right center;
 }
 
-
 /* styles for places*/
 .section-title {
-font-size: 35px;
-font-weight: 500;
-line-height: 42px;
-position: relative;
-padding-bottom: 10px;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42px;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 .section-title::after{
@@ -285,6 +265,7 @@ padding-bottom: 10px;
 .wrapper-full{
   max-width: 1262px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .places-caption {
@@ -300,14 +281,14 @@ padding-bottom: 10px;
 }
 
 .places-view {
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: #006DFE;
-text-decoration: none;
-padding-right: 59px;
-background: url(./img/Shape.svg) no-repeat right center;
-}
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+  padding-right: 59px;
+  background: url(./img/Shape.svg) no-repeat right center;
+  }
 
 .places-view:hover, .places-view:focus {
   opacity: 0.65;
@@ -400,29 +381,29 @@ background: url(./img/Shape.svg) no-repeat right center;
 }
 
 .tour-title {
-font-size: 30px;
-font-weight: 500;
-line-height: 40px;
-color: #102746;
-margin-bottom: 45px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #102746;
+  margin-bottom: 45px;
 }
 
 .tour-description {
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: #102746;
-margin-bottom: 58px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #102746;
+  margin-bottom: 58px;
 }
 
 .tour-link {
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: #006DFE;
-text-decoration: none;
-padding-right: 59px;
-background: url(./img/Shape.svg) no-repeat right center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+  padding-right: 59px;
+  background: url(./img/Shape.svg) no-repeat right center;
 }
 
 .tour-link:hover, .tour-link:focus {
@@ -440,7 +421,7 @@ background: url(./img/Shape.svg) no-repeat right center;
 
 /* Tours end */
 
-/*top places start*/
+/* Top places start */
 .top {
   margin-bottom: 86px;
 }
@@ -480,11 +461,11 @@ background: url(./img/Shape.svg) no-repeat right center;
 }
 
 .top-card-title {
-font-size: 18px;
-font-weight: 500;
-line-height: 24px;
-color: #fff;
-margin: 0 auto 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  margin: 0 auto 0 0;
 }
 
 .top-card-likes {
@@ -532,9 +513,9 @@ margin: 0 auto 0 0;
   background-color: #1664cc;
 }
 
-/*top places end*/
+/* Top places end */
 
-/* videos start */
+/* Videos start */
 .videos {
   width: 100%;
 }
@@ -559,10 +540,11 @@ margin: 0 auto 0 0;
 }
 /* videos end */
 
+
 /* footer start */
 .footer {
- background-color: #0E1D28;
- padding: 97px 0;
+  background-color: #0E1D28;
+  padding: 97px 0;
 }
 
 .footer-item {
@@ -600,7 +582,6 @@ margin: 0 auto 0 0;
   margin-bottom: 6px;
 }
 
-
 .footer-menu-item {
   list-style: none;
 }
@@ -608,6 +589,7 @@ margin: 0 auto 0 0;
 .footer-menu-link:focus, .footer-menu-link:active, .footer-menu-link:hover {
   opacity: .75;
 }
+
 /* footer end */
 
 
